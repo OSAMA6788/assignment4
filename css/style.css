@@ -1,3 +1,108 @@
+
+
+
+
+
+
+
+/* الأزرار */
+.toggle {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  background: #000;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  z-index: 9999;
+}
+
+.light {
+  right: 130px;
+  background: #fff;
+  color: #000;
+}
+
+/* الوضع العادي */
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+/* الوضع الداكن باستخدام :has() */
+body:has(#dark:target) {
+  background-color: #111;
+  color: #f1f1f1;
+}
+
+/* خلي النصوص العناوين والأزرار تظهر بلون مناسب */
+body:has(#dark:target) h1,
+body:has(#dark:target) h2,
+body:has(#dark:target) h3 {
+  color: #ffdf20;
+}
+
+body:has(#dark:target) p {
+  color: #ddd;
+}
+
+body:has(#dark:target) button {
+  background-color: #ffdf20;
+  color: #000;
+  border: none;
+}
+
+body:has(#dark:target) #foot {
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .clear-fix{
     clear: both;
 }
